@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Poppins&display=swap');
+
+* {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.navbar {
+    font-size: 15pt;
+  background-color: #111111;
+}
+
+.nav-link {
+  color: #f9f9f9 !important;
+}
+
+.link-merah {
+    position: relative;
+}
+
+.link-merah::after {
+    content: '';
+    opacity: 0;
+    transition: all 0.2s;
+    height: 2px;
+    width: 100%;
+    background-color: #ff4655;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.link-merah:hover::after {
+    opacity: 1;
+}
+
+/* .link-merah::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    transition: all 0.2s;
+    transform: translate(-50%);
+    background-color: #ff4655;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+}
+
+.link-merah:hover::after {
+    width: 50%;
+} */
+
+.tagline {
+    background-color: #111111; 
+    width: 100%;
+    color: white;
+    font-size: 20pt;
+
+}
+
+.navbar-brand .sosmed {
+    opacity: 20%;
+    transition: 0.5s;
+}
+
+.navbar-brand .sosmed:hover {
+    opacity: 100%;
+}
+
+.video-full {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.Rekomendasi {
+    color: white;
+    font-size: 15pt;
+}
+
+.table-box-shadow {
+    transition: 0.3s;
+}
+
+
+.table-box-shadow:hover {
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, .50);
+    border-radius: 3%;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+    margin-top: 0;
+}
+
+.paralax-peta .peta{
+    opacity: 0;
+    transform: translate(0,40px);
+    transition: .5s;
+}
+
+.paralax-peta .peta.show{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.paralax-button {
+    opacity: 0;
+    transform: translate(0,40px);
+    transition: .5s;
+}
+
+.paralax-button.show-button {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.paralax-navbar .paralax-nav{
+    opacity: 0;
+    transform: translate(0,40px);
+    transition: .5s;
+}
+
+.paralax-navbar .paralax-nav.nav{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.paralax-art {
+    opacity: 0;
+    transform: translate(0,-40px);
+    transition: .5s;
+}
+
+.paralax-art.show-art {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.paralax-tagline .paralax-tag{
+    opacity: 0;
+    transform: translate(0,-40px);
+    transition: .5s;
+}
+
+.paralax-tagline .paralax-tag.show-tag{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.paralax-image-art .image-art{
+    opacity: 0;
+    transform: translate(0,-40px);
+    transition: .5s;
+}
+
+.paralax-image-art .image-art.show-image{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.paralax-blog .blog{
+    opacity: 0;
+    transform: translate(0,-40px);
+    transition: .5s;
+}
+
+.paralax-blog .blog.show-blog{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.paralax-blog-capt{
+    opacity: 0;
+    transform: translate(0,-40px);
+    transition: .5s;
+}
+
+.paralax-blog-capt.show-blog-capt{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.zoom {
+    overflow: hidden;
+}
+
+.zoom img {
+    transition: all 0.3s ease;
+}
+
+.zoom:hover img {
+    transform: scale(1.15);
+}
+
+.paralax-footer .paralax-fot{
+    opacity: 0;
+    transform: translate(0,-40px);
+    transition: .5s;
+}
+
+.paralax-footer .paralax-fot.show-footer{
+    opacity: 1;
+    transform: translate(0,0);
+}
